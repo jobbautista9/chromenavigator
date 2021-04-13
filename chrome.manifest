@@ -1,6 +1,6 @@
-content   chromenavigator                                content/
-skin      chromenavigator       classic/1.0               skin/
-locale    chromenavigator       en-US                    locale/
+content   chromenavigator                                chrome/content/
+skin      chromenavigator       classic/1.0               chrome/skin/
+locale    chromenavigator       en-US                    chrome/locale/en-US/
 
 overlay   chrome://browser/content/browser.xul      chrome://chromenavigator/content/overlay/ChromeNavigatorOverlay.xul
 overlay   chrome://navigator/content/navigator.xul  chrome://chromenavigator/content/overlay/ChromeNavigatorOverlay.xul
