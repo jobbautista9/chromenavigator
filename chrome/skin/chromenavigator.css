@@ -1,0 +1,15 @@
+@import "chrome://chromenavigator/skin/tree.css";
+
+#problem-button {
+  list-style-image: url("chrome://chromenavigator/skin/icons/error.png");
+  -moz-appearance: none;
+  border: none !important;
+  padding: 3px;
+  margin: 1px 0 0;
+  background: none;
+  cursor: default;
+}
+
+#problem-button[disabled='true'] {
+  list-style-image: url("chrome://chromenavigator/skin/icons/valid.png");
+}

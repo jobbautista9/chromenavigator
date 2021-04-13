@@ -89,9 +89,7 @@ function cb_initAppCompat() {
 
 chromeBrowser.showProblems =
 function cb_showProblems() {
-  const {devtools} = Cu.import("resource://devtools/shared/Loader.jsm", {});
-  let HUDService = devtools.require("devtools/client/webconsole/hudservice");
-  HUDService.openBrowserConsoleOrFocus();
+  window.opener.toJavaScriptConsole();
 }
 
 chromeBrowser.addProblem =
@@ -244,6 +242,7 @@ function cb_view(href) {
     }
     return;
   }
+    var extProtoSvc = Components.classes["@mozilla.org/uriloader/external-protocol-service;1"].getService(Components.interfaces.nsIExternalProtocolService);
     var uri = Services.io.newURI(href, "UTF-8", null);
     extProtoSvc.loadUrl(uri);
 }
