@@ -3,18 +3,40 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="chromelist@extensions.gijsk.com"
-                   em:name="Chrome List"
-                   em:version="0.6.5"
+                   em:id="{cfe51efc-2dc4-489c-b7ca-0f72dfba1c3b}"
+                   em:name="Chrome Navigator"
+                   em:version="0.1.0"
                    em:description="Lets you take a peek at the files under the hood of your application and add-ons."
-                   em:creator="Gijs Kruitbosch"
-                   em:homepageURL="http://www.gijsk.com/">
+                   em:creator="Job Bautista"
+                   em:homepageURL="https://addons.palemoon.org/extensions/chromenavigator">
+    <em:contributor>Gijs Kruitbosch</em:contributor>
     <em:contributor>Brett Zamir</em:contributor>
     <em:targetApplication>
         <Description>
-            <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+            <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id><!-- Pale Moon -->
+            <em:minVersion>28.0</em:minVersion>
+            <em:maxVersion>29.*</em:maxVersion>
+        </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+        <Description>
+            <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id><!-- Firefox/Basilisk -->
             <em:minVersion>42.0</em:minVersion>
-            <em:maxVersion>45.0a1</em:maxVersion>
+            <em:maxVersion>52.*</em:maxVersion>
+        </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+        <Description>
+            <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id><!-- SeaMonkey -->
+            <em:minVersion>2.53.3</em:minVersion>
+            <em:maxVersion>2.53.7</em:maxVersion>
+        </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+        <Description>
+            <em:id>{a3210b97-8e8a-4737-9aa0-aa0e607640b9}</em:id><!-- Borealis Navigator -->
+            <em:minVersion>0.9.7766a1</em:minVersion>
+            <em:maxVersion>0.9.*</em:maxVersion>
         </Description>
     </em:targetApplication>
     <em:targetApplication>

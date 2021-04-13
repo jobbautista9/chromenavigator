@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm chromelist.xpi
+rm chromenavigator-dev.xpi
 
-zip -r9 chromelist.xpi content/ skin/ locale/ defaults/ license.txt chrome.manifest install.rdf -x *.swp
+zip -r9 chromenavigator-dev.xpi content/ locale/ skin/ defaults/ COPYING.MPL1.1 MPL-1.1 MPL-2.0 chrome.manifest install.rdf -x *.swp
 

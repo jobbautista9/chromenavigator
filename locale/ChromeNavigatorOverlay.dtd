@@ -1,0 +1,4 @@
+<!-- main app menu stuff -->
+<!ENTITY     chromenavigator.menu                "Explore Chrome...">
+<!ENTITY     chromenavigator.menu.accesskey      "x">
+

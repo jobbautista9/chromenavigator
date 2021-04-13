@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<?xml-stylesheet href="chrome://chromelist/skin/" type="text/css"?>
-<!DOCTYPE window SYSTEM "chrome://chromelist/locale/chromelist.dtd">
+<?xml-stylesheet href="chrome://chromenavigator/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://chromenavigator/locale/chromenavigator.dtd">
 <window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
         title="&window.title;"
         id="chrome-browser-window"
@@ -11,29 +11,29 @@
         width="640"
         height="480"
         persist="width height screenX screenY sizemode">
-        <script type="application/x-javascript" src="chrome://chromelist/content/lib/url-utils.js"></script>
-        <script type="application/x-javascript" src="chrome://chromelist/content/lib/file-utils.js"></script>
-        <script type="application/x-javascript" src="chrome://chromelist/content/lib/utils.js"></script>
-        <script type="application/x-javascript" src="chrome://chromelist/content/lib/global-vars.js"></script>
-        <script type="application/x-javascript" src="chrome://chromelist/content/lib/structure.js"></script>
-        <script type="application/x-javascript" src="chrome://chromelist/content/lib/parser.js"></script>
+        <script type="application/x-javascript" src="chrome://chromenavigator/content/lib/url-utils.js"></script>
+        <script type="application/x-javascript" src="chrome://chromenavigator/content/lib/file-utils.js"></script>
+        <script type="application/x-javascript" src="chrome://chromenavigator/content/lib/utils.js"></script>
+        <script type="application/x-javascript" src="chrome://chromenavigator/content/lib/global-vars.js"></script>
+        <script type="application/x-javascript" src="chrome://chromenavigator/content/lib/structure.js"></script>
+        <script type="application/x-javascript" src="chrome://chromenavigator/content/lib/parser.js"></script>
         <script type="application/x-javascript" src="chrome://global/content/contentAreaUtils.js"></script>
-        <script type="application/x-javascript" src="chrome://chromelist/content/chromelist.js"></script>
-        <script type="application/x-javascript" src="chrome://chromelist/content/ui/chromeTree.js"></script>
-        <script type="application/x-javascript" src="chrome://chromelist/content/ui/chromeDirTree.js" id="last-script"></script>
+        <script type="application/x-javascript" src="chrome://chromenavigator/content/chromenavigator.js"></script>
+        <script type="application/x-javascript" src="chrome://chromenavigator/content/ui/chromeTree.js"></script>
+        <script type="application/x-javascript" src="chrome://chromenavigator/content/ui/chromeDirTree.js" id="last-script"></script>
         <stringbundleset>
-          <stringbundle id="locale-strings" src="chrome://chromelist/locale/chromelist.properties"/>
+          <stringbundle id="locale-strings" src="chrome://chromenavigator/locale/chromenavigator.properties"/>
         </stringbundleset>
         <hbox align="baseline">
           <!-- <toolbarbutton id="close-button" label="&btn.close;"
                          accesskey="&btn.close.accesskey;" disabled="false"
-                         command="chromelist-close-command"/> -->
+                         command="chromenavigator-close-command"/> -->
           <label for="searchFilter" id="searchlabel">&search.label;</label>
           <textbox id="searchFilter" type="search"/>
           <spacer flex="1"/>
           <toolbarbutton id="problem-button" label="&btn.noproblems;"
                          accesskey="&btn.problems.accesskey;" disabled="true"
-                         command="chromelist-problem-command"/>
+                         command="chromenavigator-problem-command"/>
         </hbox>
         <hbox width="1" flex="1" id="chrometreebox">
           <tree id="chromedirtree" class="plain" flex="1" hidecolumnpicker="true"
@@ -133,12 +133,12 @@
                     oncommand="chromeBrowser.showProperties(chromeTree.getCurrentItem());"/>
 
         </menupopup>
-        <commandset id="chromelist-commands">
-            <command id="chromelist-close-command" oncommand="chromeBrowser.close()"/>
-            <command id="chromelist-problem-command" oncommand="chromeBrowser.showProblems()"/>
+        <commandset id="chromenavigator-commands">
+            <command id="chromenavigator-close-command" oncommand="chromeBrowser.close()"/>
+            <command id="chromenavigator-problem-command" oncommand="chromeBrowser.showProblems()"/>
         </commandset>
         <keyset>
-            <key id="close-key" command="chromelist-close-command" modifiers="accel" key="&close.shortcut;"/>
-            <key id="problem-key" command="chromelist-problem-command" modifiers="accel" key="&problems.shortcut;"/>
+            <key id="close-key" command="chromenavigator-close-command" modifiers="accel" key="&close.shortcut;"/>
+            <key id="problem-key" command="chromenavigator-problem-command" modifiers="accel" key="&problems.shortcut;"/>
         </keyset>
 </window>

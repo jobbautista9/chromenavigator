@@ -47,7 +47,7 @@ var chromeBrowser = {}; // Global object.
 chromeBrowser.init =
 function cb_init() {
   this.prefService = Services.prefs;
-  this.prefBranch = this.prefService.getBranch("extensions.chromelist.");
+  this.prefBranch = this.prefService.getBranch("extensions.chromenavigator.");
 
   // Fit in, wherever we may be:
   this.initAppCompat();
@@ -452,7 +452,7 @@ chromeBrowser.search.__defineSetter__("expr", chromeBrowser.search._update);
 chromeBrowser.showProperties =
 function cb_properties(item) {
   var windowArgs = "scrollbars,chrome,resizable,dialog=no";
-  window.openDialog("chrome://chromelist/content/ui/props/properties.xul", "_blank", windowArgs, item);
+  window.openDialog("chrome://chromenavigator/content/ui/props/properties.xul", "_blank", windowArgs, item);
 }
 
 chromeBrowser.host = "Unknown";

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://chromenavigator/locale/ChromeNavigatorOverlay.dtd" >
+<overlay id="chromeListToolsOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript"
+        src="chrome://chromenavigator/content/overlay/ChromeNavigatorOverlay.js" />
+
+<menupopup id="menu_ToolsPopup">
+	<menuitem insertafter="devToolsSeparator" label="&chromenavigator.menu;"
+	accesskey="&chromenavigator.menu.accesskey;" oncommand="startChromeNavigator();" />	
+</menupopup>
+
+<menupopup id="taskPopup">
+	<menuitem insertafter="devToolsSeparator" label="&chromenavigator.menu;"
+	accesskey="&chromenavigator.menu.accesskey;" oncommand="startChromeNavigator();" />	
+</menupopup>
+
+
+</overlay>
+
