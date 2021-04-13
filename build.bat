@@ -1,3 +1,3 @@
-del chromelist.xpi
-zip -r chromelist.xpi chrome/ defaults/ COPYING.MPL1.1 chrome.manifest install.rdf -x *.svn*
+del chromelist-dev.xpi
+zip -r chromelist-dev.xpi chrome/ defaults/ COPYING.MPL1.1 chrome.manifest install.rdf -x *.svn*
 
