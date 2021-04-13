@@ -10,4 +10,4 @@ In order to build, simply run the build.sh script for *nix systems, or the
 build.bat batch file for Windows systems. Alternatively you can just zip up all
 the files here into an .xpi package.
 
-[screenshot](chromenavigator-preview.png)
+![screenshot](chromenavigator-preview.png)
